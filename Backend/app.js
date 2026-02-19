@@ -9,7 +9,7 @@ import contactRoute from "./routes/contact.js";
 dotenv.config({ path: "../.env" }); // points to root .env
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 // ===============================
 // MIDDLEWARE
