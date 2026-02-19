@@ -3,7 +3,7 @@ export default function Skills() {
     Frontend: ["React", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
     Backend: ["Springboot", "Node.js", "Express.js", "REST APIs"],
     Database: ["MySQL", "MongoDB"],
-    DevOps: ["AWS EC2", "Nginx", "Docker", "Git"],
+    DevOps: ["Linux", "AWS EC2", "Nginx", "Docker", "Git"],
   };
 
   return (
