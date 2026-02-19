@@ -1,8 +1,8 @@
 export default function Skills() {
   const skills = {
     Frontend: ["React", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
-    Backend: ["Node.js", "Express.js", "REST APIs"],
-    Database: ["MySQL"],
+    Backend: ["Springboot", "Node.js", "Express.js", "REST APIs"],
+    Database: ["MySQL", "MongoDB"],
     DevOps: ["AWS EC2", "Nginx", "Docker", "Git"],
   };
 

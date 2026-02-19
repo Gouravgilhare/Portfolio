@@ -29,7 +29,7 @@ export default function Projects() {
       description:
         "Java-based banking application that simulates real-world banking operations including account creation, deposits, withdrawals, fund transfers, and transaction management with secure authentication.",
       tech: ["Java", "Java Swing", "MySQL"],
-      github: "#",
+      github: "https://github.com/Gouravgilhare/BankManagementSystem.git",
       live: "#",
     },
   ];
