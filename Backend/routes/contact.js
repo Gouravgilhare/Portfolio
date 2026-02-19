@@ -2,7 +2,7 @@ import express from "express";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: "../../.env" }); // points to root .env
 
 const router = express.Router();
 

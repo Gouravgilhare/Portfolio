@@ -5,7 +5,8 @@ import helmet from "helmet"; // Added for security headers
 import rateLimit from "express-rate-limit";
 import contactRoute from "./routes/contact.js";
 
-dotenv.config();
+// import dotenv from "dotenv";
+dotenv.config({ path: "../.env" }); // points to root .env
 
 const app = express();
 const PORT = process.env.PORT || 5000;

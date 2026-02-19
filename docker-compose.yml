@@ -5,7 +5,7 @@ services:
       dockerfile: DockerFile.Backend
     container_name: backend
     env_file:
-      - Backend/.env
+      - .env
     ports:
       - "5000:5000"
     networks:
