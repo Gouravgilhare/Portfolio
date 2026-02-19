@@ -1,0 +1,32 @@
+# Stage 1: Build frontend
+FROM node:22-alpine AS frontend-build
+
+WORKDIR /app
+
+COPY package*.json ./ 
+RUN npm install
+COPY . . 
+RUN npm run build
+
+# Stage 2: Backend + serve frontend
+FROM node:22-alpine
+
+WORKDIR /app
+
+# Copy backend package.json
+COPY Backend/package*.json ./Backend/
+RUN npm install --prefix Backend
+
+# Copy backend code
+COPY Backend ./Backend
+
+# Copy frontend build
+COPY --from=frontend-build /app/dist ./Backend/dist
+
+# Set port from Cloud Run
+ENV PORT=8080
+
+EXPOSE 8080
+
+# Start backend server
+CMD ["node", "Backend/app.js"]

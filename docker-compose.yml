@@ -1,25 +1,15 @@
+version: "3.9"
+
 services:
-  backend:
+  app:
     build:
       context: .
-      dockerfile: DockerFile.Backend
-    container_name: backend
+      dockerfile: DockerFile
+    container_name: portfolio-app
     env_file:
       - .env
     ports:
       - "5000:5000"
-    networks:
-      - portfolio-network
-
-  frontend:
-    build:
-      context: .
-      dockerfile: DockerFile.Frontend
-    container_name: frontend
-    env_file:
-      - .env
-    ports:
-      - "80:80"
     networks:
       - portfolio-network
 
