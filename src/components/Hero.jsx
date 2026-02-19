@@ -21,7 +21,7 @@ export default function Hero() {
 
         {/* Achievement Line */}
         <p className="text-gray-500 mb-8">
-          🧠 300+ LeetCode Problems (C++) | 🏆 Recognized for SAMADHAN Project
+          300+ LeetCode Problems (C++) | Recognized for SAMADHAN Project
         </p>
 
         {/* Social Links */}
