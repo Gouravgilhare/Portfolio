@@ -7,7 +7,9 @@ export default function Navbar() {
     <nav className="fixed w-full bg-black text-white shadow-md z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-xl font-bold text-blue-500">Gourav.dev</h1>
+        <h1 className="text-xl font-bold text-blue-500">
+          Gouravgilhare.online
+        </h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
