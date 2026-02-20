@@ -15,8 +15,8 @@ export default function Hero() {
 
         {/* One Liner */}
         <p className="text-xl md:text-2xl text-gray-400 mb-6">
-          Java & Spring Boot Backend Developer focused on scalable systems,
-          system design, and high-performance applications.
+          MERN & Java Backend Developer focused on scalable systems, system
+          design, and high-performance applications.
         </p>
 
         {/* Achievement Line */}
