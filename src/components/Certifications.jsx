@@ -7,9 +7,7 @@ export default function Certifications() {
         </h2>
 
         <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
-          <h3 className="text-xl font-semibold mb-2">
-            Fundamentals of CyberSecurity (EDU-102)
-          </h3>
+          <h3 className="text-xl font-semibold mb-2">Fundamentals of CyberSecurity (EDU-102)</h3>
           <p className="text-gray-400 mb-2">Issued by Zscaler Academy</p>
           <a
             href="https://verify.skilljar.com/c/kond6eidfbm7"

@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { useState } from 'react';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   const handleChange = (e) => {
@@ -19,29 +19,26 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/contact`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-      );
+        body: JSON.stringify(formData),
+      });
 
       const data = await response.json();
       alert(data.message);
 
       if (data.success) {
         setFormData({
-          name: "",
-          email: "",
-          message: "",
+          name: '',
+          email: '',
+          message: '',
         });
       }
     } catch (error) {
-      alert("Something went wrong!", error);
+      alert('Something went wrong!', error);
     }
   };
 
@@ -57,13 +54,11 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left Side - Contact Info */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-blue-500">
-              Let's Connect
-            </h3>
+            <h3 className="text-2xl font-semibold text-blue-500">Let's Connect</h3>
 
             <p className="text-gray-400 leading-7">
-              I'm open to backend development opportunities, internships, and
-              collaborations. Feel free to reach out.
+              I'm open to backend development opportunities, internships, and collaborations. Feel
+              free to reach out.
             </p>
 
             <div className="space-y-6 text-gray-300 text-lg">
@@ -90,10 +85,7 @@ export default function Contact() {
           </div>
 
           {/* Right Side - Form */}
-          <form
-            onSubmit={handleSubmit}
-            className="bg-gray-900 p-8 rounded-2xl shadow-lg space-y-6"
-          >
+          <form onSubmit={handleSubmit} className="bg-gray-900 p-8 rounded-2xl shadow-lg space-y-6">
             {/* Name */}
             <div>
               <label className="block mb-2 text-gray-400">Name</label>

@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 
 export default function Hero() {
   return (
@@ -15,8 +15,8 @@ export default function Hero() {
 
         {/* One Liner */}
         <p className="text-xl md:text-2xl text-gray-400 mb-6">
-          MERN & Java Backend Developer focused on scalable systems, system
-          design, and high-performance applications.
+          MERN & Java Backend Developer focused on scalable systems, system design, and
+          high-performance applications.
         </p>
 
         {/* Achievement Line */}

@@ -1,5 +1,5 @@
-import "./src/config/dotenv.config.js";
-import app from "./src/app.js";
+import './src/config/dotenv.config.js';
+import app from './src/app.js';
 
 const PORT = process.env.BACKEND_PORT;
 

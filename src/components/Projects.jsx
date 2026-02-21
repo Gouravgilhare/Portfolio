@@ -1,36 +1,29 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Paylift - Ride & Parcel",
+      title: 'Paylift - Ride & Parcel',
       description:
-        "Production-ready backend deployed on AWS EC2 with Nginx reverse proxy and Docker configuration.",
-      tech: ["Node.js", "Express", "AWS EC2", "Nginx", "Docker"],
-      github: "#",
-      live: "#",
+        'Production-ready backend deployed on AWS EC2 with Nginx reverse proxy and Docker configuration.',
+      tech: ['Node.js', 'Express', 'AWS EC2', 'Nginx', 'Docker'],
+      github: '#',
+      live: '#',
     },
     {
-      title: "SAMADHAN - Admin Dashboard",
+      title: 'SAMADHAN - Admin Dashboard',
       description:
-        "A complaint management admin dashboard built with React and Tailwind CSS, featuring real-time complaint tracking, department-wise filtering, status management, and graphical analytics for efficient governance.",
-      tech: [
-        "React",
-        "Tailwind CSS",
-        "Node.js",
-        "Express",
-        "MySQL",
-        "Recharts",
-      ],
-      github: "#",
-      live: "#",
+        'A complaint management admin dashboard built with React and Tailwind CSS, featuring real-time complaint tracking, department-wise filtering, status management, and graphical analytics for efficient governance.',
+      tech: ['React', 'Tailwind CSS', 'Node.js', 'Express', 'MySQL', 'Recharts'],
+      github: '#',
+      live: '#',
     },
 
     {
-      title: "Bank Management System",
+      title: 'Bank Management System',
       description:
-        "Java-based banking application that simulates real-world banking operations including account creation, deposits, withdrawals, fund transfers, and transaction management with secure authentication.",
-      tech: ["Java", "Java Swing", "MySQL"],
-      github: "https://github.com/Gouravgilhare/BankManagementSystem.git",
-      live: "#",
+        'Java-based banking application that simulates real-world banking operations including account creation, deposits, withdrawals, fund transfers, and transaction management with secure authentication.',
+      tech: ['Java', 'Java Swing', 'MySQL'],
+      github: 'https://github.com/Gouravgilhare/BankManagementSystem.git',
+      live: '#',
     },
   ];
 
@@ -56,10 +49,7 @@ export default function Projects() {
               {/* Tech Stack */}
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((techItem, i) => (
-                  <span
-                    key={i}
-                    className="bg-gray-700 px-3 py-1 text-sm rounded-lg"
-                  >
+                  <span key={i} className="bg-gray-700 px-3 py-1 text-sm rounded-lg">
                     {techItem}
                   </span>
                 ))}
