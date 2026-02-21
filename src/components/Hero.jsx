@@ -10,7 +10,7 @@ export default function Hero() {
           Backend Engineer & Problem Solver
         </p>
 
-        {/* Name */}
+        {/* Name with one-time typewriter */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6">Gourav Gilhare</h1>
 
         {/* One Liner */}
