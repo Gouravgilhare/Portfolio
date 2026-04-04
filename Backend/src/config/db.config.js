@@ -3,7 +3,8 @@ import "./dotenv.config.js";
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI, {
+    const url = process.env.MONGODB_URI;
+    const conn = await mongoose.connect(url, {
       maxPoolSize: 20,
       serverSelectionTimeoutMS: 5000,
       socketTimeoutMS: 45000,

@@ -25,4 +25,5 @@ COPY --from=frontend-build /app/frontend/dist ./public
 
 EXPOSE 8080
 
+
 CMD ["node", "server.js"]
